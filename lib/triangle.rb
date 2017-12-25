@@ -9,7 +9,7 @@ class Triangle
   end
 
   def kind
-    raise TriangleError if side_3 == 0
+    :equilateral if [:side_1, :side_2, :side_3].uniq.size <= 1
   end
 end
 
