@@ -11,7 +11,6 @@ class Triangle
   end
 
   def kind
-    binding.pry
     :equilateral if [@side_1, @side_2, @side_3].uniq.count <= 1
   end
 end
