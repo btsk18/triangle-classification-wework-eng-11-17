@@ -12,7 +12,7 @@ class Triangle
 
   def kind
     binding.pry
-    :equilateral if [:side_1, :side_2, :side_3].uniq.count <= 1
+    :equilateral if [@side_1, @side_2, @side_3].uniq.count <= 1
   end
 end
 
