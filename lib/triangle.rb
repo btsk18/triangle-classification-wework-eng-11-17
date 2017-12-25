@@ -9,7 +9,7 @@ class Triangle
   end
 
   def kind
-    
+    raise TriangleError if side_3, side_2, side_1 == 0
   end
 end
 
