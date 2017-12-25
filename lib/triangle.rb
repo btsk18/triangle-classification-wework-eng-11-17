@@ -11,7 +11,7 @@ class Triangle
   end
 
   def kind
-    :equilateral if [@side_1, @side_2, @side_3].uniq.count <= 1
+    return :equilateral if [@side_1, @side_2, @side_3].uniq.count <= 1
     :isosceles if [@side_1, @side_2, @side_3].uniq.count <= 2
   end
 end
